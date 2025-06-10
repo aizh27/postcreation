@@ -3,10 +3,10 @@ import google.generativeai as genai
 from streamlit_extras.stylable_container import stylable_container
 
 # Load your API Key (store this in .streamlit/secrets.toml in deployment)
-genai.configure(api_key=st.secrets["GEMINI_API_KEY"])
+genai.configure(api_key="AIzaSyDsCsgs9EcdkCSnrGhEURhMhFpjeFa-jxI")
 
 # Load Gemini model
-model = genai.GenerativeModel("gemini-pro")
+model = genai.GenerativeModel("gemini-2.0-flash")
 
 # App UI
 st.title("📱 Social Media Trend Post Generator")
